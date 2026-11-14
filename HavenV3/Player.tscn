@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://sxeh5qou6d6d"]
+
+[ext_resource type="Script" uid="uid://dlwhoal7vu0in" path="res://player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://c2505y8wga4vy" path="res://Duck Sprites/1.png" id="2_e80uo"]
+[ext_resource type="Texture2D" uid="uid://fsg0mklqlmha" path="res://Duck Sprites/2.png" id="3_cxr5p"]
+[ext_resource type="Texture2D" uid="uid://b7x2c1a8k827f" path="res://Duck Sprites/3.png" id="4_tdg3f"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kpjcp"]
+radius = 184.88889
+height = 369.77777
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsssl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e80uo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cxr5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tdg3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cxr5p")
+}],
+"loop": 1,
+"name": &"Blinking",
+"speed": 1.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=161587730]
+scale = Vector2(0.3, 0.375)
+script = ExtResource("1_kpjcp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=254226038]
+scale = Vector2(0.3, 0.375)
+shape = SubResource("CapsuleShape2D_kpjcp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1332450811]
+position = Vector2(0.00012207031, -2.666687)
+scale = Vector2(0.08500003, 0.09066669)
+sprite_frames = SubResource("SpriteFrames_jsssl")
+animation = &"Blinking"
+frame_progress = 0.11042163
+speed_scale = 5.0
