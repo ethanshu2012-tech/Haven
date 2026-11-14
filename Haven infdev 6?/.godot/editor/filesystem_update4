@@ -1,5 +1,6 @@
-res://MainScene.tscn
 res://Player.tscn
-res://player.gd
-res://bullet(withplaceholder).tscn
+res://GlobalData.gd
+res://gun.gd
 res://bullet.gd
+res://bullet(withplaceholder).tscn
+res://MainScene.tscn
