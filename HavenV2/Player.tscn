@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://sxeh5qou6d6d"]
+
+[ext_resource type="Script" uid="uid://dlwhoal7vu0in" path="res://player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://dqknkpw3ihhus" path="res://Duck.jpg" id="2_kpjcp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kpjcp"]
+radius = 447.99997
+height = 938.6666
+
+[node name="Player" type="CharacterBody2D" unique_id=161587730]
+scale = Vector2(0.3, 0.375)
+script = ExtResource("1_kpjcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1471541518]
+position = Vector2(1.1444092e-05, -1.333374)
+scale = Vector2(0.3, 0.375)
+texture = ExtResource("2_kpjcp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=254226038]
+scale = Vector2(0.3, 0.375)
+shape = SubResource("CapsuleShape2D_kpjcp")

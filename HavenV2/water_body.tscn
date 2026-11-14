@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://mbjibf8vmg14"]
+
+[ext_resource type="PackedScene" uid="uid://bco8ei658m0cc" path="res://water_spring.tscn" id="1_e46t2"]
+[ext_resource type="Script" uid="uid://cc3r3xh16qptq" path="res://water_body.gd" id="1_gw7w0"]
+
+[node name="Water_Body" type="Node2D" unique_id=733262028]
+script = ExtResource("1_gw7w0")
+
+[node name="Water_Spring" parent="." unique_id=1238000861 instance=ExtResource("1_e46t2")]
+position = Vector2(-70, 0)
+
+[node name="Water_Spring2" parent="." unique_id=311931262 instance=ExtResource("1_e46t2")]
+position = Vector2(-35, 0)
+
+[node name="Water_Spring3" parent="." unique_id=1583288891 instance=ExtResource("1_e46t2")]
+
+[node name="Water_Spring4" parent="." unique_id=1289028621 instance=ExtResource("1_e46t2")]
+position = Vector2(33, 0)
+
+[node name="Water_Spring5" parent="." unique_id=2143777876 instance=ExtResource("1_e46t2")]
+position = Vector2(67, 0)
