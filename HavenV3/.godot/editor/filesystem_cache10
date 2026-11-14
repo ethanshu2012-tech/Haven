@@ -1,0 +1,17 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1794634607
+16px-tileset-template.png::CompressedTexture2D::7872186579021985127::1794634526::1794634608::1::::<><><>0<>0<>66bcff7ea7b1cf7401ecadeb2d66bfa6<>res://.godot/imported/16px-tileset-template.png-e9e3565df0130115c7269b0d8b48737a.ctex::
+Duck.jpg::CompressedTexture2D::8303735328792547854::1794634526::1794634608::1::::<><><>0<>0<>9d9afbc397d577f87c265ed16b210530<>res://.godot/imported/Duck.jpg-cc5d9536947019964f172be7e1d54ab6.ctex::
+icon.svg::CompressedTexture2D::4603316538784199998::1794634526::1794634608::1::::<><><>0<>0<>30fd70c0d40a002e373688b8565cdd08<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+MainScene.tscn::PackedScene::930160701008543053::1794634526::0::1::::<><><>0<>0<><>::uid://sxeh5qou6d6d::::res://Player.tscn<>uid://d1sueuxibryqq::::res://waterfall-autotiles-anim_0.png
+player.gd::GDScript::7977205680226668721::1794634526::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::1311136843437778469::1794634526::0::1::::<><><>0<>0<><>::uid://dlwhoal7vu0in::::res://player.gd<>uid://c2505y8wga4vy::::res://Duck Sprites/1.png<>uid://fsg0mklqlmha::::res://Duck Sprites/2.png<>uid://b7x2c1a8k827f::::res://Duck Sprites/3.png
+waterfall-autotiles-anim_0.png::CompressedTexture2D::9022553354635190632::1794634526::1794634608::1::::<><><>0<>0<>0f42af58c0c29d30c99cb3cdeb4275d9<>res://.godot/imported/waterfall-autotiles-anim_0.png-0f5abeb5aa8eaa2f1fb1e083b6d77648.ctex::
+water_body.gd::GDScript::4972105042956386114::1794634526::0::1::::<>Node2D<><>0<>0<><>::
+water_body.tscn::PackedScene::844891302471869497::1794634526::0::1::::<><><>0<>0<><>::uid://bco8ei658m0cc::::res://water_spring.tscn<>uid://cc3r3xh16qptq::::res://water_body.gd
+water_spring.gd::GDScript::3301112815393290627::1794634526::0::1::::<>Node2D<><>0<>0<><>::
+water_spring.tscn::PackedScene::2557710932946316058::1794634526::0::1::::<><><>0<>0<><>::uid://bnbc30ygd4pot::::res://water_spring.gd<>uid://b6t47lf32p80a::::res://icon.svg
+::res://Duck Sprites/::1794634526
+1.png::CompressedTexture2D::6731444289417759030::1794634526::1794634608::1::::<><><>0<>0<>2dec563861f80067463c750e9be9f457<>res://.godot/imported/1.png-4cd2b0d7da1c02bf8e8d7cf7ac6569ed.ctex::
+2.png::CompressedTexture2D::388512610817322454::1794634526::1794634608::1::::<><><>0<>0<>bf38bbb16297e3c8bd0ff883a52ee7e6<>res://.godot/imported/2.png-f7bf2df4d0b621208e41264ac0f2545d.ctex::
+3.png::CompressedTexture2D::4681588665967181945::1794634526::1794634608::1::::<><><>0<>0<>df12f2a5e655306f5946a1b1e56e4ebb<>res://.godot/imported/3.png-333cebfc8769468910db7276961b78a4.ctex::
