@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://l46chkidm46i"]
+
+[ext_resource type="Script" uid="uid://c5benraofwxk" path="res://bullet.gd" id="1_bqbj0"]
+[ext_resource type="Texture2D" uid="uid://c7tf0ggc775nd" path="res://Screenshot 2026-11-14 155220.png" id="1_exsbh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0aj8"]
+size = Vector2(247, 116)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=628285977]
+script = ExtResource("1_bqbj0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=404011487]
+position = Vector2(-1.5, -1)
+shape = SubResource("RectangleShape2D_f0aj8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=26805023]
+position = Vector2(-1, 2.3841858e-07)
+scale = Vector2(0.19275701, 0.5481221)
+texture = ExtResource("1_exsbh")

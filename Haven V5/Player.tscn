@@ -8,11 +8,13 @@
 [ext_resource type="Script" uid="uid://dgd3pvetsujhu" path="res://camera_2d.gd" id="5_cxr5p"]
 [ext_resource type="Texture2D" uid="uid://braq8v3dvdty5" path="res://Duck Sprites/Duck Sprites/r--2mid-blink.png" id="6_l6ohk"]
 [ext_resource type="Texture2D" uid="uid://vl5rkddx1bay" path="res://Duck Sprites/Duck Sprites/r--3blink.png" id="7_oudfo"]
-[ext_resource type="PackedScene" uid="uid://bkbwd0qpqcbkp" path="res://Gun.tscn" id="9_wi0c6"]
 [ext_resource type="PackedScene" uid="uid://blm8cbme65ovk" path="res://hp.tscn" id="10_hp6x6"]
+[ext_resource type="Texture2D" uid="uid://dvf2872kgil50" path="res://Duck Sprites/Duck Sprites/l--cannon.png" id="11_l6ohk"]
+[ext_resource type="Script" uid="uid://c3a5oali0c766" path="res://gun.gd" id="12_l6ohk"]
+[ext_resource type="Texture2D" uid="uid://b2c5vsjrthdy6" path="res://Duck Sprites/Duck Sprites/r--cannon.png" id="12_oudfo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hp6x6"]
-size = Vector2(555.55566, 417.77777)
+size = Vector2(555.55566, 382.22223)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jsssl"]
 animations = [{
@@ -159,18 +161,37 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_sirug"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_l6ohk")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_oudfo")
+}],
+"loop": 1,
+"name": &"right",
+"speed": 5.0
+}]
+
 [node name="Player" type="CharacterBody2D" unique_id=161587730]
 scale = Vector2(0.3, 0.375)
 script = ExtResource("1_kpjcp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=254226038]
 z_index = 1
-position = Vector2(-7.947284e-07, -19.999996)
+position = Vector2(-7.947284e-07, -9.33333)
 scale = Vector2(0.29999992, 0.29999998)
 shape = SubResource("RectangleShape2D_hp6x6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1332450811]
-position = Vector2(0.00012207031, -2.666687)
+position = Vector2(4.3368087e-19, 0)
 scale = Vector2(0.09, 0.07)
 sprite_frames = SubResource("SpriteFrames_jsssl")
 animation = &"Right"
@@ -188,9 +209,15 @@ shadow_enabled = true
 shadow_color = Color(0, 0, 0, 1)
 shadow_filter_smooth = 64.0
 
-[node name="Gun" parent="." unique_id=609472853 instance=ExtResource("9_wi0c6")]
-position = Vector2(2.861023e-06, 1.000001)
-
 [node name="HP" parent="." unique_id=926701450 instance=ExtResource("10_hp6x6")]
 position = Vector2(-1383.333, -778.6667)
 scale = Vector2(0.5, 0.5)
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=140381623]
+position = Vector2(130, 32)
+scale = Vector2(0.06914062, 0.05216667)
+sprite_frames = SubResource("SpriteFrames_sirug")
+animation = &"right"
+script = ExtResource("12_l6ohk")
+
+[node name="Marker2D" type="Marker2D" parent="AnimatedSprite2D2" unique_id=107802726]

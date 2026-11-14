@@ -1,0 +1,5 @@
+res://MainScene.tscn
+res://Player.tscn
+res://player.gd
+res://bullet(withplaceholder).tscn
+res://bullet.gd
