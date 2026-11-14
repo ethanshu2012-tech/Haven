@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b4wmy2td3phq7"]
+
+[node name="MainMenu" type="Node2D" unique_id=1980356813]
+
+[node name="Label" type="Label" parent="." unique_id=658233063]
+offset_left = 336.0
+offset_top = 39.0
+offset_right = 620.0
+offset_bottom = 62.0
+text = "Zombie Duck Culling Simulator 2026"

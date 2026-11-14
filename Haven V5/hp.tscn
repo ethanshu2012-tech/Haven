@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://blm8cbme65ovk"]
+
+[ext_resource type="Texture2D" uid="uid://c5p6cyadionhe" path="res://HP/1hp.jpg" id="1_pcuvm"]
+[ext_resource type="Script" uid="uid://bqlqqnmj3x7ee" path="res://hp.gd" id="1_vm5xg"]
+[ext_resource type="Texture2D" uid="uid://bqwvghce08pnn" path="res://HP/10hp.jpg" id="2_vm5xg"]
+[ext_resource type="Texture2D" uid="uid://c13pduskdcs40" path="res://HP/2hp.jpg" id="3_y7gms"]
+[ext_resource type="Texture2D" uid="uid://dsfn5udeas4lg" path="res://HP/3hp.jpg" id="4_sk06h"]
+[ext_resource type="Texture2D" uid="uid://duogxc8s1u80a" path="res://HP/4hp.jpg" id="5_uumik"]
+[ext_resource type="Texture2D" uid="uid://c8r0aho4gknc6" path="res://HP/5hp.jpg" id="6_p5v7p"]
+[ext_resource type="Texture2D" uid="uid://bsctk1jac6wc8" path="res://HP/6hp.jpg" id="7_qcgp3"]
+[ext_resource type="Texture2D" uid="uid://boeifnp14y2fw" path="res://HP/7hp.jpg" id="8_aoufj"]
+[ext_resource type="Texture2D" uid="uid://rmgosxhm66k0" path="res://HP/8hp.jpg" id="9_cn1pv"]
+[ext_resource type="Texture2D" uid="uid://dhgm34puvt58o" path="res://HP/9hp.jpg" id="10_f2r4o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsssl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pcuvm")
+}],
+"loop": 1,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vm5xg")
+}],
+"loop": 1,
+"name": &"10",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_y7gms")
+}],
+"loop": 1,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_sk06h")
+}],
+"loop": 1,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_uumik")
+}],
+"loop": 1,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_p5v7p")
+}],
+"loop": 1,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_qcgp3")
+}],
+"loop": 1,
+"name": &"6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_aoufj")
+}],
+"loop": 1,
+"name": &"7",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_cn1pv")
+}],
+"loop": 1,
+"name": &"8",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_f2r4o")
+}],
+"loop": 1,
+"name": &"9",
+"speed": 5.0
+}]
+
+[node name="HP" type="Node2D" unique_id=926701450]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_vm5xg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1736505405]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_jsssl")
+animation = &"1"
