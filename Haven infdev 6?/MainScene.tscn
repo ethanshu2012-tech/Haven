@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://bfrx268lqrbky" path="res://haveeen ducks.mp3" id="3_rpqi1"]
 [ext_resource type="Texture2D" uid="uid://dkfl062x88skt" path="res://16px-tileset-template.png" id="3_uxrcv"]
 [ext_resource type="PackedScene" uid="uid://ch7t26mm7fmbg" path="res://Enemy.tscn" id="5_rf2cd"]
+[ext_resource type="Texture2D" uid="uid://cvbc4spsyhmb1" path="res://startscreen.png" id="6_a814b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rpqi1"]
 texture = ExtResource("2_x4av3")
@@ -280,6 +281,17 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_rpqi1")
 sources/1 = SubResource("TileSetAtlasSource_rf2cd")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_sirug"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_a814b")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="Node2D" unique_id=945283036]
 
 [node name="Player" parent="." unique_id=161587730 instance=ExtResource("1_3mqji")]
@@ -300,3 +312,11 @@ parameters/looping = true
 [node name="CharacterBody2D" parent="." unique_id=631894751 instance=ExtResource("5_rf2cd")]
 show_behind_parent = true
 position = Vector2(1336, 328)
+
+[node name="startscrn" type="CharacterBody2D" parent="." unique_id=1639780964]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="startscrn" unique_id=1754335174]
+z_index = -16
+position = Vector2(452.87503, 97.8906)
+scale = Vector2(0.6928385, 0.62201965)
+sprite_frames = SubResource("SpriteFrames_sirug")

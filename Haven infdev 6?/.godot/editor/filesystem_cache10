@@ -1,19 +1,19 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1794700666
+::res://::1794703568
 16-168538_discover-the-coolest-light-blue-colour-circle.png::CompressedTexture2D::8346130875060923027::1794645991::1794646026::1::::<><><>0<>0<>a7427a5e33edaf206afcc051a764d817<>res://.godot/imported/16-168538_discover-the-coolest-light-blue-colour-circle.png-42592ef01da24272e04b0270994bf93b.ctex::
 16px-tileset-template.png::CompressedTexture2D::7872186579021985127::1794645991::1794646025::1::::<><><>0<>0<>66bcff7ea7b1cf7401ecadeb2d66bfa6<>res://.godot/imported/16px-tileset-template.png-e9e3565df0130115c7269b0d8b48737a.ctex::
 bubble (1).webp::CompressedTexture2D::4663004023067493052::1794698333::1794698359::1::::<><><>0<>0<>d7fdae9cdeed9ce70ff74e588beb95c5<>res://.godot/imported/bubble (1).webp-5613e402b157f9592fc5f4e73d3a46e7.ctex::
 bubble.png::CompressedTexture2D::3664684043191725362::1794698347::1794698360::1::::<><><>0<>0<>013d73810f3ce77223a1155796f1a75b<>res://.godot/imported/bubble.png-3dc4d46c6bed7b70ac6f4b3bfb630a9b.ctex::
 bubble.webp::CompressedTexture2D::6750930717240990898::1794698300::1794698359::1::::<><><>0<>0<>480029b7e26b78a56d4b51d727c12bfd<>res://.godot/imported/bubble.webp-f0a065bd51f2e64e5a141a281dc6c996.ctex::
-bullet(withplaceholder).tscn::PackedScene::833830416729153706::1794700622::0::1::::<><><>0<>0<><>::uid://c5benraofwxk::::res://bullet.gd<>uid://bshg2tiw6mw7k::::res://bubble.png
-bullet.gd::GDScript::202377589150402488::1794700580::0::1::::<>CharacterBody2D<><>0<>0<><>::
+bullet(withplaceholder).tscn::PackedScene::833830416729153706::1794700734::0::1::::<><><>0<>0<><>::uid://c5benraofwxk::::res://bullet.gd<>uid://bshg2tiw6mw7k::::res://bubble.png
+bullet.gd::GDScript::202377589150402488::1794702522::0::1::::<>CharacterBody2D<><>0<>0<><>::
 bullet.tscn::PackedScene::4180362162430565590::1794645991::0::1::::<><><>0<>0<><>::uid://c7tf0ggc775nd::::res://Screenshot 2026-11-14 155220.png<>uid://c5benraofwxk::::res://bullet.gd
 camera_2d.gd::GDScript::7588316218933405766::1794645991::0::1::::<>Camera2D<><>0<>0<><>::
 canvas_modulate.gd::GDScript::3909694552705982783::1794645991::0::1::::<>RefCounted<><>0<>0<><>::
-enemy.gd::GDScript::7891139992000904942::1794700622::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Enemy.tscn::PackedScene::5331426847630042368::1794645991::0::1::::<><><>0<>0<><>::uid://dkor6myddnwa5::::res://enemy.gd<>uid://dj0pl64vw4yon::::res://Duck Sprites/Duck Sprites/l--zombie-duck.png<>uid://bfbxperxtajy6::::res://Duck Sprites/Duck Sprites/r--zombie-duck.png
-GlobalData.gd::GDScript::7978459191362652474::1794696828::0::1::::<>Node<><>0<>0<><>::
-gun.gd::GDScript::6739975517538628381::1794699873::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+enemy.gd::GDScript::7891139992000904942::1794703053::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Enemy.tscn::PackedScene::5331426847630042368::1794703350::0::1::::<><><>0<>0<><>::uid://dkor6myddnwa5::::res://enemy.gd<>uid://bfbxperxtajy6::::res://Duck Sprites/Duck Sprites/r--zombie-duck.png<>uid://c6dmguucrfeni::::res://R-zduck-injured.png
+GlobalData.gd::GDScript::7978459191362652474::1794702002::0::1::::<>Node<><>0<>0<><>::
+gun.gd::GDScript::6739975517538628381::1794702633::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
 Gun.tscn::PackedScene::3091715967553678679::1794699128::0::1::::<><><>0<>0<><>::uid://dvf2872kgil50::::res://Duck Sprites/Duck Sprites/l--cannon.png<>uid://b2c5vsjrthdy6::::res://Duck Sprites/Duck Sprites/r--cannon.png
 haveeen ducks rag:boss fight can repeat to make longer.mp3::AudioStreamMP3::8633857651296760898::1794648005::1794648005::1::::<><><>0<>0<>06d5803809945c8d39c9301ebea85cdb<>res://.godot/imported/haveeen ducks rag:boss fight can repeat to make longer.mp3-283007d3bce9dfbeb0fa613d3da93f00.mp3str::
 haveeen ducks.mp3::AudioStreamMP3::2773905710695580952::1794645991::1794646025::1::::<><><>0<>0<>16e9315dec1364ee98b38ddab6495145<>res://.godot/imported/haveeen ducks.mp3-fe121001b76fe5e59b0f87688a0bd7f3.mp3str::
@@ -21,12 +21,13 @@ hp.gd::GDScript::3533151083571500708::1794645991::0::1::::<>Node2D<><>0<>0<><>::
 hp.tscn::PackedScene::3185277800394644972::1794645991::0::1::::<><><>0<>0<><>::uid://c5p6cyadionhe::::res://HP/1hp.jpg<>uid://bqlqqnmj3x7ee::::res://hp.gd<>uid://bqwvghce08pnn::::res://HP/10hp.jpg<>uid://c13pduskdcs40::::res://HP/2hp.jpg<>uid://dsfn5udeas4lg::::res://HP/3hp.jpg<>uid://duogxc8s1u80a::::res://HP/4hp.jpg<>uid://c8r0aho4gknc6::::res://HP/5hp.jpg<>uid://bsctk1jac6wc8::::res://HP/6hp.jpg<>uid://boeifnp14y2fw::::res://HP/7hp.jpg<>uid://rmgosxhm66k0::::res://HP/8hp.jpg<>uid://dhgm34puvt58o::::res://HP/9hp.jpg
 icon.svg::CompressedTexture2D::4603316538784199998::1794645991::1794646025::1::::<><><>0<>0<>30fd70c0d40a002e373688b8565cdd08<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 MainMenu.tscn::PackedScene::4468086370408330036::1794645991::0::1::::<><><>0<>0<><>::
-MainScene.tscn::PackedScene::930160701008543053::1794699768::0::1::::<><><>0<>0<><>::uid://sxeh5qou6d6d::::res://Player.tscn<>uid://d1sueuxibryqq::::res://waterfall-autotiles-anim_0.png<>uid://bfrx268lqrbky::::res://haveeen ducks.mp3<>uid://dkfl062x88skt::::res://16px-tileset-template.png<>uid://ch7t26mm7fmbg::::res://Enemy.tscn
-player.gd::GDScript::7977205680226668721::1794699461::0::1::::<>CharacterBody2D<><>0<>0<><>::
+MainScene.tscn::PackedScene::930160701008543053::1794701533::0::1::::<><><>0<>0<><>::uid://sxeh5qou6d6d::::res://Player.tscn<>uid://d1sueuxibryqq::::res://waterfall-autotiles-anim_0.png<>uid://bfrx268lqrbky::::res://haveeen ducks.mp3<>uid://dkfl062x88skt::::res://16px-tileset-template.png<>uid://ch7t26mm7fmbg::::res://Enemy.tscn
+player.gd::GDScript::7977205680226668721::1794703296::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Player.tscn::PackedScene::1311136843437778469::1794697410::0::1::::<><><>0<>0<><>::uid://dlwhoal7vu0in::::res://player.gd<>uid://c52xuup5ok5an::::res://Duck Sprites/Duck Sprites/l--1duck.png<>uid://jpdw251o63ia::::res://Duck Sprites/Duck Sprites/l--2mid-blink.png<>uid://be3ixf0sykiy1::::res://Duck Sprites/Duck Sprites/l--3blink.png<>uid://dp30553747qft::::res://Duck Sprites/Duck Sprites/r--1duck.png<>uid://dgd3pvetsujhu::::res://camera_2d.gd<>uid://braq8v3dvdty5::::res://Duck Sprites/Duck Sprites/r--2mid-blink.png<>uid://vl5rkddx1bay::::res://Duck Sprites/Duck Sprites/r--3blink.png<>uid://blm8cbme65ovk::::res://hp.tscn<>uid://dvf2872kgil50::::res://Duck Sprites/Duck Sprites/l--cannon.png<>uid://c3a5oali0c766::::res://gun.gd<>uid://b2c5vsjrthdy6::::res://Duck Sprites/Duck Sprites/r--cannon.png
 R-zduck-injured.png::CompressedTexture2D::6955629053580893642::1794700663::1794700674::1::::<><><>0<>0<>178cb9f8b4d1f85218f9901fa4a90449<>res://.godot/imported/R-zduck-injured.png-354d9ad936c532c0e4c5c11ce456a6d3.ctex::
 Screenshot 2026-11-14 155220.png::CompressedTexture2D::7058456095485682677::1794645991::1794646026::1::::<><><>0<>0<>dad905bb8d918eb39752f478b2bd3d74<>res://.godot/imported/Screenshot 2026-11-14 155220.png-3f29d16676f457572c8308c2ae6cf17d.ctex::
 Spawn.gd::GDScript::3933131176466469099::1794645991::0::1::::<>RefCounted<><>0<>0<><>::
+startscreen.png::CompressedTexture2D::6249045652990284452::1794703565::1794703576::1::::<><><>0<>0<>66ed6cbfad435a4190b278f472657ea5<>res://.godot/imported/startscreen.png-cb3cd9bdd687a98bc9a09043a7044af4.ctex::
 waterfall-autotiles-anim_0.png::CompressedTexture2D::9022553354635190632::1794645991::1794646025::1::::<><><>0<>0<>0f42af58c0c29d30c99cb3cdeb4275d9<>res://.godot/imported/waterfall-autotiles-anim_0.png-0f5abeb5aa8eaa2f1fb1e083b6d77648.ctex::
 ::res://Duck Sprites/::1794645991
 ::res://Duck Sprites/Duck Sprites/::1794646030
