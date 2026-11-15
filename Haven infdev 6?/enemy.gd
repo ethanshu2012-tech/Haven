@@ -45,7 +45,7 @@ func _ready() -> void:
 		new = ENEMY.instantiate()
 		GlobalData.world.add_child(new)
 		print("aa")
-	
+	meanimation.play("Right")
 	
 	
 func _physics_process(delta: float) -> void:
