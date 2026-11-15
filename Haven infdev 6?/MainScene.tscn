@@ -300,18 +300,3 @@ parameters/looping = true
 [node name="CharacterBody2D" parent="." unique_id=631894751 instance=ExtResource("5_rf2cd")]
 show_behind_parent = true
 position = Vector2(1336, 328)
-
-[node name="CharacterBody2D2" parent="." unique_id=2051270567 instance=ExtResource("5_rf2cd")]
-position = Vector2(-1032, 314)
-
-[node name="CharacterBody2D3" parent="." unique_id=2045657141 instance=ExtResource("5_rf2cd")]
-position = Vector2(-836, 317)
-
-[node name="CharacterBody2D4" parent="." unique_id=337376658 instance=ExtResource("5_rf2cd")]
-position = Vector2(-335, 334)
-
-[node name="CharacterBody2D5" parent="." unique_id=613833827 instance=ExtResource("5_rf2cd")]
-position = Vector2(1678, 317)
-
-[node name="CharacterBody2D6" parent="." unique_id=782928785 instance=ExtResource("5_rf2cd")]
-position = Vector2(1974, 348)

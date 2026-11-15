@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var jump_velocity: float = -150.0    
 @export var jump_on_rush: bool = true         
 @export var jump_over_walls: bool = true     
-
+@onready var meanimation = $AnimatedSprite2D
 # Distances & Timing
 @export var trigger_range: float = 110.0
 @export var hit_range: float = 45.0
@@ -15,7 +15,7 @@ extends CharacterBody2D
 @export var rush_time: float = 0.35
 @export var cooldown_time: float = 0.8
 @export var attack_damage: int = 10
-
+var hp = 2
 @export var sprite: Node2D
 
 enum State { CHASE, RETREAT, RUSH, COOLDOWN }
@@ -27,8 +27,29 @@ var state_timer: float = 0.0
 var rush_direction: float = 1.0
 var has_dealt_damage: bool = false
 
+const ENEMY = preload("res://Enemy.tscn")
+func _ready() -> void:
+	add_to_group("Enemy")
+	
+	if not GlobalData.cloned:
+		GlobalData.cloned = true
+		var new = ENEMY.instantiate()
+		GlobalData.world.add_child(new)
+		print("aa")
+		new = ENEMY.instantiate()
+		GlobalData.world.add_child(new)
+		print("aa")
+		new = ENEMY.instantiate()
+		GlobalData.world.add_child(new)
+		print("aa")
+		new = ENEMY.instantiate()
+		GlobalData.world.add_child(new)
+		print("aa")
+	
+	
+	
 func _physics_process(delta: float) -> void:
-
+	
 	if player == null:
 		player = get_tree().get_first_node_in_group("player")
 	if player == null:
@@ -97,6 +118,26 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+func takedamage() -> void:
+	hp = hp - 1
+	meanimation.play("rightinjure")
+	if hp == 0:
+		queue_free()
+	
+	
+		
+	
+	
+
 func face_direction(dir: float) -> void:
 	if sprite != null and dir != 0:
 		sprite.flip_h = dir < 0
+
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Bullet"):
+		takedamage()
+		print("took")
+		queue_free()
+		body.queue_free()

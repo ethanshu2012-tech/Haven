@@ -2,6 +2,7 @@ extends Node
 
 @onready var world = self
 @onready var player = %"../Node2D/Player"
+var cloned = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

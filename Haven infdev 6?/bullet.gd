@@ -1,11 +1,13 @@
 extends CharacterBody2D
-
+var bounces = 5
 @export var speed: float = 800.0
 @export var damage: int = 20
 @export var lifetime: float = 3.0
 var targetposition
+@export var Theenemy = CharacterBody2D
 var JUMP_VELOCITY: int = 800
 func _ready() -> void:
+	add_to_group("Bullet")
 	pass
 	
 
@@ -18,15 +20,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	var collision = move_and_collide(delta * speed * targetposition)
 	if collision:
+		bounces = bounces - 1
 		targetposition = targetposition.bounce(collision.get_normal())
+		if bounces == 0:
+			queue_free()
 	
-
-func _on_body_entered(body: Node) -> void:
-	
-	
-	# Deal damage if the hit object (like your Enemy) has a take_damage function
-	if body.has_method("take_damage"):
-		body.take_damage(damage)
-	
-	# Destroy bullet on impact
-	queue_free()

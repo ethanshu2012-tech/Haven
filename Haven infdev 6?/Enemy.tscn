@@ -1,22 +1,11 @@
 [gd_scene format=3 uid="uid://ch7t26mm7fmbg"]
 
 [ext_resource type="Script" uid="uid://dkor6myddnwa5" path="res://enemy.gd" id="1_2hac7"]
-[ext_resource type="Texture2D" uid="uid://dj0pl64vw4yon" path="res://Duck Sprites/Duck Sprites/l--zombie-duck.png" id="1_s7bn3"]
 [ext_resource type="Texture2D" uid="uid://bfbxperxtajy6" path="res://Duck Sprites/Duck Sprites/r--zombie-duck.png" id="2_2hac7"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hp6x6"]
-size = Vector2(2533.3335, 2266.6667)
+[ext_resource type="Texture2D" uid="uid://c6dmguucrfeni" path="res://R-zduck-injured.png" id="3_2hac7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jsssl"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_s7bn3")
-}],
-"loop": 1,
-"name": &"Left",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_2hac7")
@@ -24,19 +13,39 @@ animations = [{
 "loop": 1,
 "name": &"Right",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2hac7")
+}],
+"loop": 1,
+"name": &"rightinjure",
+"speed": 5.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hp6x6"]
+size = Vector2(2488.8892, 2222.2222)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=631894751]
 scale = Vector2(0.15, 0.15)
 safe_margin = 0.001
 script = ExtResource("1_2hac7")
 
-[node name="Hurtbox" type="CollisionShape2D" parent="." unique_id=1692024611]
-position = Vector2(9.999987, -16.66666)
-scale = Vector2(0.15, 0.15)
-shape = SubResource("RectangleShape2D_hp6x6")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1123784902]
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_jsssl")
-animation = &"Left"
+animation = &"rightinjure"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1756734140]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Area2D" unique_id=1692024611]
+position = Vector2(6.6666703, -26.666662)
+scale = Vector2(0.15, 0.15)
+shape = SubResource("RectangleShape2D_hp6x6")
+
+[node name="Hurtbox2" type="CollisionShape2D" parent="." unique_id=1458701038]
+position = Vector2(6.6666703, -26.666662)
+scale = Vector2(0.15, 0.15)
+shape = SubResource("RectangleShape2D_hp6x6")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

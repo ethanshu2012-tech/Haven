@@ -1,19 +1,18 @@
 [gd_scene format=3 uid="uid://l46chkidm46i"]
 
 [ext_resource type="Script" uid="uid://c5benraofwxk" path="res://bullet.gd" id="1_bqbj0"]
-[ext_resource type="Texture2D" uid="uid://c7tf0ggc775nd" path="res://Screenshot 2026-11-14 155220.png" id="1_exsbh"]
+[ext_resource type="Texture2D" uid="uid://bshg2tiw6mw7k" path="res://bubble.png" id="2_bqbj0"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0aj8"]
-size = Vector2(54, 24)
+[sub_resource type="CircleShape2D" id="CircleShape2D_pm7j3"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=628285977]
 script = ExtResource("1_bqbj0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=404011487]
-position = Vector2(-1, 1)
-shape = SubResource("RectangleShape2D_f0aj8")
+position = Vector2(0, -0.25)
+shape = SubResource("CircleShape2D_pm7j3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=26805023]
-position = Vector2(-1, 1.0000076)
-scale = Vector2(0.04264019, 0.11443664)
-texture = ExtResource("1_exsbh")
+position = Vector2(-1, 0)
+scale = Vector2(0.011160049, 0.011000001)
+texture = ExtResource("2_bqbj0")

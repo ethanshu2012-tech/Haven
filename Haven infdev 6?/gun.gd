@@ -16,9 +16,8 @@ func _process(delta: float) -> void:
 	#else:
 	#	look_at(-1#(flipped)*get_global_mouse_position())
 	look_at(get_global_mouse_position())
-	pass
 func shoot() -> void:
 	var new_bullet = BULLET.instantiate()
 	new_bullet.position = marker2d.global_position
-	new_bullet.targetposition = (get_global_mouse_position() - marker2d.global_position).normalized()
+	new_bullet.targetposition = (get_global_mouse_position()- marker2d.global_position).normalized()
 	GlobalData.world.add_child(new_bullet)
