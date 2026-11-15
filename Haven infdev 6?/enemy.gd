@@ -47,6 +47,7 @@ func _ready() -> void:
 		#print("aa")
 		#GlobalData.enemies = GlobalData.enemies + 4
 	meanimation.play("Right")
+
 	
 	
 func _physics_process(delta: float) -> void:
@@ -119,12 +120,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-func takedamage() -> void:
-	hp = hp - 1
-	meanimation.play("rightinjure")
-	if hp == 0:
-		queue_free()
-	
+
 	
 		
 	
@@ -138,9 +134,12 @@ func face_direction(dir: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Bullet"):
-		takedamage()
-		print("took")
-		queue_free()
+		hp = hp - 1
+		meanimation.play("rightinjure")
+		if hp == 0:
+			GlobalData.enemies = GlobalData.enemies - 1
+			print(GlobalData.enemies)
+			queue_free()
 		body.queue_free()
 	if body.is_in_group("Player"):
 		GlobalData.restart()
