@@ -31,20 +31,21 @@ const ENEMY = preload("res://Enemy.tscn")
 func _ready() -> void:
 	add_to_group("Enemy")
 	
-	if not GlobalData.cloned:
-		GlobalData.cloned = true
-		var new = ENEMY.instantiate()
-		GlobalData.world.add_child(new)
-		print("aa")
-		new = ENEMY.instantiate()
-		GlobalData.world.add_child(new)
-		print("aa")
-		new = ENEMY.instantiate()
-		GlobalData.world.add_child(new)
-		print("aa")
-		new = ENEMY.instantiate()
-		GlobalData.world.add_child(new)
-		print("aa")
+	#if not GlobalData.cloned:
+		#GlobalData.cloned = true
+		#var new = ENEMY.instantiate()
+		#GlobalData.world.add_child(new)
+		#print("aa")
+		#new = ENEMY.instantiate()
+		#GlobalData.world.add_child(new)
+		#print("aa")
+		#new = ENEMY.instantiate()
+		#GlobalData.world.add_child(new)
+		#print("aa")
+		#new = ENEMY.instantiate()
+		#GlobalData.world.add_child(new)
+		#print("aa")
+		#GlobalData.enemies = GlobalData.enemies + 4
 	meanimation.play("Right")
 	
 	
@@ -141,3 +142,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		print("took")
 		queue_free()
 		body.queue_free()
+	if body.is_in_group("Player"):
+		GlobalData.restart()
+		

@@ -13,9 +13,7 @@ var fire_cadence = 0.67
 var fire_cooldown = 0.0
 
 
-	
 
-	# do the attack
 
 func _process(delta):
 	if Input.is_action_pressed("right"):
@@ -27,6 +25,9 @@ func _process(delta):
 	if fire_cooldown <= 0:
 		canshoot = true
 	fire_cooldown -= delta
+	if GlobalData.enemies == 0:
+		_animated_sprite.play("win")
+		
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
@@ -54,3 +55,4 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	

@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://dgd3pvetsujhu" path="res://camera_2d.gd" id="5_cxr5p"]
 [ext_resource type="Texture2D" uid="uid://braq8v3dvdty5" path="res://Duck Sprites/Duck Sprites/r--2mid-blink.png" id="6_l6ohk"]
 [ext_resource type="Texture2D" uid="uid://vl5rkddx1bay" path="res://Duck Sprites/Duck Sprites/r--3blink.png" id="7_oudfo"]
+[ext_resource type="Texture2D" uid="uid://dn84iguh0qjnf" path="res://winscreen.png" id="8_oudfo"]
 [ext_resource type="PackedScene" uid="uid://blm8cbme65ovk" path="res://hp.tscn" id="10_hp6x6"]
 [ext_resource type="Texture2D" uid="uid://dvf2872kgil50" path="res://Duck Sprites/Duck Sprites/l--cannon.png" id="11_l6ohk"]
 [ext_resource type="Script" uid="uid://c3a5oali0c766" path="res://gun.gd" id="12_l6ohk"]
@@ -159,6 +160,14 @@ animations = [{
 "loop": 1,
 "name": &"Right",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_oudfo")
+}],
+"loop": 1,
+"name": &"win",
+"speed": 5.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sirug"]
@@ -194,7 +203,7 @@ shape = SubResource("RectangleShape2D_hp6x6")
 position = Vector2(4.3368087e-19, 0)
 scale = Vector2(0.09, 0.07)
 sprite_frames = SubResource("SpriteFrames_jsssl")
-animation = &"Right"
+animation = &"win"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1624333866]
 position = Vector2(3.333333, -85.33333)

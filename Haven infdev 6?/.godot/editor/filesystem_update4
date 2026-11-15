@@ -7,3 +7,4 @@ res://MainScene.tscn
 res://player.gd
 res://Enemy.tscn
 res://GlobalData.gd
+res://Player.tscn
